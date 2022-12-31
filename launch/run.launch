@@ -1,0 +1,14 @@
+<launch>
+
+    <!--- Robot State TF -->
+    <include file="$(find lvi_sam)/launch/include/module_robot_state_publisher.launch" />
+
+    <!--- Run Rviz-->
+    <include file="$(find lvi_sam)/launch/include/module_rviz.launch" />
+
+    <!--- SAM -->
+    <include file="$(find lvi_sam)/launch/include/module_sam.launch" />
+
+    <!-- <node name="rosbag" pkg="rosbag" type="play" args="-r 1 /mnt/F/DataSet/OpenSrcFrame/LVI-SAM/handheld.bag" /> -->
+    
+</launch>
